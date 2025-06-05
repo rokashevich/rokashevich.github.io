@@ -1,0 +1,31 @@
+<html>
+<head>
+    <style>
+
+.circle-container {
+  position: relative;
+  width: 170px; /* Calculated based on circle positions */
+  height: 170px;
+  border: 1px dashed #ccc;
+}
+
+.circle {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 255, 0.3);
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
+}
+    </style>
+</head>
+<body>
+<div class="circle-container">
+  <div class="circle" style="--size: 100px; --x: 0; --y: 0;"></div>
+  <div class="circle" style="--size: 80px; --x: 70px; --y: 60px;"></div>
+  <div class="circle" style="--size: 60px; --x: 110px; --y: 20px;"></div>
+</div>
+</body>
+</html>
